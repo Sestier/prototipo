@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="{{route('index')}}">Cavi Asesorías | Home</a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('usuarios.index')}}">Usuarios</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Matemáticas
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{{route('temas.index')}}">Parcial 1</a>
+                    <a class="dropdown-item" href="{{route('temas.index')}}">Parcial 2</a>
+                    <a class="dropdown-item" href="{{route('temas.index')}}">Parcial 3</a>
+                    <a class="dropdown-item" href="{{route('temas.index')}}">Semestral</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+            <a href="{{ url('/logout')}}">
+                <i class="mdi mdi-account-off"></i>Cerrar Sesión</a>
+        </ul>
+    </nav>
+</body>
+
+</html>
+<!--
+<nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+          <a class="navbar-brand brand-logo fit" href="{{route('index')}}">
+            <img src="/images/cav.png" alt="logo" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="{{route('index')}}">
+            <img src="/images/cav.png" alt="logo" />
+          </a>
+        </div>
+        @if(Auth::user()->idTipoUsuario == 1)
+        <div class="navbar-menu-wrapper d-flex align-items-center">
+          <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
+            <li class="nav-item">
+              <a href="{{route('index')}}" class="nav-link">
+                <i class="mdi mdi-account-edit"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{route('usuarios.index')}}" class="nav-link">
+                <i class="mdi mdi-account-edit"></i>Usuarios</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown"></a>
+                <i class="mdi mdi-account-edit"></i>
+                <button class="dropbtn" onclick="myFunction()">Matemáticas</button>
+              </a>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="{{route('temas.index')}}">
+                  <i class="mdi mdi-account-edit"></i>Parcial 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <! <a href="{{route('temas.index')}}" class="nav-link">
+                    <i class="mdi mdi-account-edit"></i>Parcial 1</a> 
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-nav-right header-links d-none d-md-flex">
+            <li class="nav-item">
+              <a href="{{ url('/logout')}}" class="nav-link">
+                <i class="mdi mdi-account-off"></i>Cerrar Sesión</a>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+      </nav> -->
