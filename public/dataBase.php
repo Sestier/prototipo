@@ -26,6 +26,10 @@ if (!$link) {
 
 echo "Success: A proper connection to MySQL was made! The my_db database is great." . PHP_EOL;
 echo "Host information: " . mysqli_get_host_info($link) . PHP_EOL;
+echo "Nombre de usuario: ". $connectstr_dbusername . "\n";
+echo "Contraseña de usuario: ". $connectstr_dbpassword . "\n";
+echo "Host: ". $connectstr_dbhost ."\n";
+echo "Nombre: " . $connectstr_dbname ."\n";
 
 mysqli_close($link);
 ?>
