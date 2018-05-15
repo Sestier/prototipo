@@ -22,8 +22,17 @@
   <div class="container-scroller">
     <div class="container-fluid page-body-wrapper full-page-wrapper">
       <div class="content-wrapper d-flex align-items-center auth login-full-bg">
-        <div class="row w-100">
-          <div class="col-lg-4 mx-auto">
+        <div class="col-md-6">
+          <div class="col-md-6">
+          </div>
+          <div class="col-md-4">
+            <img src="/images/cav.png" alt="CavLogo">
+          </div>
+          <div class="col-md-2">
+          </div>
+        </div>
+        <div class="row w-100 col-md-6">
+          <div class="col-md-6 mx-auto">
             <div class="auth-form-dark text-left p-5">
               <h2>Inicio de sesión</h2>
               <h4 class="font-weight-light">Hola, bienvenido a Cavi Asesorías.</h4>
