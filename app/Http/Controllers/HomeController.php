@@ -27,4 +27,8 @@ class HomeController extends Controller
         //return view('home');
         return view('entrada.index');
     }
+
+    public function edit() {
+        return view('entrada.edit');
+    }
 }
