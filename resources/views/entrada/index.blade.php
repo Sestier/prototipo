@@ -7,7 +7,7 @@
     <img src="../images/720x560.png" alt="Placeholder">
     <div>
         <br>
-        <a href="{{route('edit.blade.php')}}" class="btn btn-primary">Editar Información</a>
+        <a href="{{route('edit')}}" class="btn btn-primary">Editar Información</a>
     </div>
 </div>
 @endsection
