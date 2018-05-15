@@ -1,10 +1,10 @@
 @extends('layouts.default') @section('content')
 <h1>Editar informacion General</h1>
-<a href="{{route('temas.index')}}">Volver a informacion general</a>
+<a href="{{route('entrada.index')}}">Volver a informacion general</a>
 @if($exito)
 <p>La informacion se actualizó</p>
 @endif
-<form method="POST" action="{{route('temas.update',array('temas'=>$tema->id)) }}">
+<form method="POST" action="{{route('entrada.update',array('entrada'=>$entrada->id))}}">
     {{ csrf_field() }}
     <input type="hidden" name="_method" value="PUT">
     <div class="form-group">

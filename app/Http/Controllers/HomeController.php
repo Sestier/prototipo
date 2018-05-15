@@ -40,12 +40,7 @@ class HomeController extends Controller
         $entrada->documento = $request->input('docDocumento');
 
         $respuesta = array();
-        $respuesta["exito"]=false;
 
-        if($tema->save()){
-
-            $respuesta["exito"]= true;
-        }
         $respuesta["entrada"] = $id;
         return redirect()->route('entrada.edit',$respuesta);
     }
