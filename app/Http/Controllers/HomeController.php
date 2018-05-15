@@ -31,4 +31,22 @@ class HomeController extends Controller
     public function edit() {
         return view('entrada.edit');
     }
+
+    public function update(Request $request, $id ){
+        $entrada = \App\Entrada::find($id);
+        $entrada->nombre = $request->input('txtNombre');
+        $entrada->descripcion = $request->input('txtDescripcion');
+        $entrada->imagen = $request->input('imgImagenGeneral');
+        $entrada->documento = $request->input('docDocumento');
+
+        $respuesta = array();
+        $respuesta["exito"]=false;
+
+        if($tema->save()){
+
+            $respuesta["exito"]= true;
+        }
+        $respuesta["entrada"] = $id;
+        return redirect()->route('entrada.edit',$respuesta);
+    }
 }
