@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 14, 2018 at 01:22 AM
+-- Generation Time: May 15, 2018 at 12:42 AM
 -- Server version: 5.6.34-log
 -- PHP Version: 7.1.7
 
@@ -21,6 +21,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `prototipo`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `entrada`
+--
+
+CREATE TABLE `entrada` (
+  `id` int(11) NOT NULL,
+  `titulo` text NOT NULL,
+  `descripcion` varchar(500) NOT NULL,
+  `imagen` varchar(500) NOT NULL,
+  `documento` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -62,9 +76,18 @@ CREATE TABLE `password_resets` (
 CREATE TABLE `subtemas` (
   `id` int(11) NOT NULL,
   `idTema` int(11) NOT NULL,
-  `Nombre` text NOT NULL,
-  `Descripcion` varchar(500) NOT NULL
+  `nombre` text,
+  `descripcion` varchar(500) NOT NULL,
+  `video` varchar(255) NOT NULL,
+  `documento` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `subtemas`
+--
+
+INSERT INTO `subtemas` (`id`, `idTema`, `nombre`, `descripcion`, `video`, `documento`) VALUES
+(12, 4, 'rene', 'seasedad', 'asdlaks', 'asjkhdkajsd');
 
 -- --------------------------------------------------------
 
@@ -84,7 +107,8 @@ CREATE TABLE `temas` (
 
 INSERT INTO `temas` (`id`, `nombre`, `descripcion`) VALUES
 (1, 'Primer tema', 'Descripción del primer tema'),
-(2, 'Segundo tema', 'Nombre del segundo tema ');
+(2, 'Segundo tema', 'Nombre del segundo tema '),
+(4, 'tercer tema', 'tercer tema');
 
 -- --------------------------------------------------------
 
@@ -129,12 +153,18 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `idTipoUsuario`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, 2, 'Escuela1', 'escuela@mail', '$2y$10$kxEHxdfcAxboShoKaMfsCuRq0pK/Wrc9WdQ4buPlL4et1KAD.iBDu', 'r30hTGgXQDzyA6dTRB3RofSY9o7ZBzAgefRZPop5SDtziPiQ7kLlyL3cPgFK', '2018-03-01 06:36:30', '2018-03-01 06:57:58'),
-(2, 1, 'Sestier', 'sestier@mail.com', '$2y$10$Ek95Mff6MKT2lKMAFQ1.1OLw/kPXP5fPNxSPz0VURXRxq.mU6Z79y', 'TNS2ZJvw6Fo4MKnhB89pDwqkiOh6h6UsRLn7DjlsfrV2qCqWMbaeU2WNLCuh', '2018-04-17 07:26:32', '2018-05-14 08:12:32'),
-(7, 3, NULL, 'alumno@mail.com', '$2y$10$TIZ1kdPJcWQ3Ak/s1Hh1iO7/Wzu1iFZweCgyZIL46X4P.lupf/nwy', 'LMDMdCgMIoACAdcRuVVlfiFeuZUN1fq9uTHD9vMCgK8PutPWq2sewSpz7a01', '2018-05-09 20:10:14', '2018-05-13 21:07:46');
+(2, 1, 'Sestier', 'sestier@mail.com', '$2y$10$Ek95Mff6MKT2lKMAFQ1.1OLw/kPXP5fPNxSPz0VURXRxq.mU6Z79y', 'MFNfTOzFM2neID0XXJ0gl9EKjIYvCIIemJ5FPaesypK0pQtndjAjpHfzSkhe', '2018-04-17 07:26:32', '2018-05-15 07:09:13'),
+(7, 3, NULL, 'alumno@mail.com', '$2y$10$TIZ1kdPJcWQ3Ak/s1Hh1iO7/Wzu1iFZweCgyZIL46X4P.lupf/nwy', '16uZnGVPF3siNOVpoYz7xvTspQa5wTyI5Adv8aMyy6SNsvdROSsunbRALzHK', '2018-05-09 20:10:14', '2018-05-15 07:08:59');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `entrada`
+--
+ALTER TABLE `entrada`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `password_resets`
@@ -175,15 +205,20 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `entrada`
+--
+ALTER TABLE `entrada`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `subtemas`
 --
 ALTER TABLE `subtemas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `temas`
 --
 ALTER TABLE `temas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `tipousuario`
 --

@@ -60,10 +60,14 @@ class SubTemaController extends Controller
     {
         $nombre = $request->input('txtNombre');
         $descripcion = $request->input('txtDescripcion');
+        $video = $request->input('txtVideo');
+        $documento = $request->input('txtDocumento');
 
         $nuevoSubtema = new \App\Subtema;
         $nuevoSubtema->nombre = $nombre;
         $nuevoSubtema->descripcion = $descripcion;
+        $nuevoSubtema->video = $video;
+        $nuevoSubtema->documento = $documento;
 
         $respuesta = array();
         $respuesta["exito"] = false;
@@ -71,9 +75,7 @@ class SubTemaController extends Controller
             $respuesta["exito"] = true;
         }
 
-        return redirect()->route('subtemas.index',$respuesta);
-
-        
+        return redirect()->route('subtemas.index',$respuesta);  
     }
 
     /**

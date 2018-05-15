@@ -97,8 +97,10 @@ class TemaController extends Controller
     {
         $tema = \App\Tema::find($id);
         $exito = $request->input('exito');
-
+        
         $argumentos = array();
+        //trae todos los subtemas del tema que pido
+        $subtemas = \App\Subtema::where('idTema','=', $id)->get();
         $argumentos['tema'] = $tema;
         $argumentos['exito'] = $exito;
 
@@ -147,5 +149,33 @@ class TemaController extends Controller
             $resultado["borrado"] = true;
         }
         return redirect()->route('temas.index', $resultado);
+    }
+
+    public function createSubtema(Request $request, $idTema) {
+        $argumentos = array();
+        $argumentos['idTema'] = $idTema;
+        return view('subtemas.create', $argumentos);
+    }
+
+    public function storeSubtema(Request $request, $idTema) {
+        $nombre = $request->input('txtNombre');
+        $descripcion = $request->input('txtDescripcion');
+        $video = $request->input('txtVideo');
+        $documento = $request->input('txtDocumento');
+        
+        $nuevoSubtema = new \App\Subtema;
+        $nuevoSubtema->nombre = $nombre;
+        $nuevoSubtema->descripcion = $descripcion;
+        $nuevoSubtema->video = $video;
+        $nuevoSubtema->documento = $documento;
+        $nuevoSubtema->idTema = $idTema;
+
+        $respuesta = array();
+        $respuesta["exito"] = false;
+        if ($nuevoSubtema->save()) {
+            $respuesta["exito"] = true;
+        }
+
+        return redirect()->route('temas.subtemas.create', $respuesta);
     }
 }

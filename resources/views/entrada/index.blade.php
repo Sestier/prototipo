@@ -7,7 +7,7 @@
     <img src="../images/720x560.png" alt="Placeholder">
     <div>
         <br>
-        <button class="btn btn-primary">Editar Información</button>
+        <a href="" class="btn btn-primary">Editar Información</a>
     </div>
 </div>
 @endsection
