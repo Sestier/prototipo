@@ -61,8 +61,6 @@
         </button>
       </div>
     </nav>
-    <div class="main-panel"></div>
-    </div>
     @endif
     @if(Auth::user()->idTipoUsuario == 3)
       <div class="navbar-menu-wrapper d-flex align-items-center">
