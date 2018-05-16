@@ -67,10 +67,10 @@
         <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
           <li class="nav-item">
             <a href="{{route('index')}}" class="nav-link">
-              <i class="mdi mdi-account-edit"></i>Home</a>
+              <i class="mdi mdi-account-edit"></i>Cavi Asesorías | Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="../matematicas.html" class="nav-link">
               <i class="mdi mdi-account-edit"></i>Matemáticas</a>
           </li>
         </ul>
