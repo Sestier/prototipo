@@ -59,7 +59,7 @@
     </table>
     @endif
 
-    @if(Auth::user()->idTipoUsuario == 3)
+@if(Auth::user()->idTipoUsuario == 3)
 <br>
 <br>
 <br>
@@ -134,6 +134,6 @@
     }
 </script>@endsection
 @endif
-    @endsection
+@endsection
 
 

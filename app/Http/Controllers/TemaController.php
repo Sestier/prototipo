@@ -23,7 +23,6 @@ class TemaController extends Controller
     {
         //Hacer en todas las funciones
         $usuario = $request->user();
-        if ($usuario->idTipoUsuario == 1) {
             $temas = \App\Tema::all();
             $argumentos = array();
 
@@ -34,9 +33,6 @@ class TemaController extends Controller
             $argumentos["exito"] = $exito;
             $argumentos["borrado"] = $borrado;
             return view("temas.index", $argumentos);
-        } else {
-            return redirect()->route('index');
-        }
     }
 
     /**
