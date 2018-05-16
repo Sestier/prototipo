@@ -44,8 +44,4 @@ class HomeController extends Controller
         $respuesta["entrada"] = $id;
         return redirect()->route('entrada.edit',$respuesta);
     }
-
-    public function matematicas() {
-        return view('matematicas.html');
-    }
 }
