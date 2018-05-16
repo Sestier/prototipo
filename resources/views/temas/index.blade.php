@@ -72,7 +72,7 @@
         <button class="collapsible">Sistema de ecuaciones lineales: Solución de sistemas de ecuaciones lineales 2x2</button>
         <div class="content">
         <h3>Subtemas</h3>
-        <p><a>Método de reducción</a><p>
+        <p><a href="{{route('temas.create')}}">Método de reducción</a><p>
     </div>
     </div>
     <button class="collapsible">Parcial 2</button>
