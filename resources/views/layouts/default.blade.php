@@ -68,7 +68,7 @@
       <div class="navbar-menu-wrapper d-flex align-items-center">
         <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
           <li class="nav-item">
-            <a href="{{route('entrada.indexU')}}" class="nav-link">
+            <a href="{{route('index')}}" class="nav-link">
               <i class="mdi mdi-account-edit"></i>Home</a>
           </li>
           <li class="nav-item">
@@ -91,7 +91,7 @@
       <!-- partial:partials/_sidebar.html -->
       @endif
       <!-- partial -->
-        @yield('content')
+      @yield('content')
       <!-- main-panel ends -->
     <!-- page-body-wrapper ends -->
   </div>
