@@ -70,7 +70,7 @@
               <i class="mdi mdi-account-edit"></i>Cavi Asesorías | Home</a>
           </li>
           <li class="nav-item">
-            <a href="matematicas.html" class="nav-link">
+            <a href="matematicas" class="nav-link">
               <i class="mdi mdi-account-edit"></i>Matemáticas</a>
           </li>
         </ul>
