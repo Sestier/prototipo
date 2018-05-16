@@ -70,7 +70,7 @@
               <i class="mdi mdi-account-edit"></i>Home</a>
           </li>
           <li class="nav-item">
-            <a href="{{route('temas.index')}}" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="mdi mdi-account-edit"></i>Matemáticas</a>
           </li>
         </ul>
