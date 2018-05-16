@@ -84,9 +84,7 @@
           <span class="icon-menu"></span>
         </button>
       </div>
-    </nav>
-    <div class="main-panel"></div>
-    </div>
+    </nav>    
     @endif
     @yield('content')
     <!-- page-body-wrapper ends -->
