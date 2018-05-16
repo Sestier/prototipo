@@ -64,6 +64,32 @@
     <!-- partial -->
       <!-- partial:partials/_sidebar.html -->
       @endif
+      @if(Auth::user()->idTipoUsuario == 3)
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
+          <li class="nav-item">
+            <a href="{{route('index')}}" class="nav-link">
+              <i class="mdi mdi-account-edit"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="mdi mdi-account-edit"></i>Matemáticas</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right header-links d-none d-md-flex">
+          <li class="nav-item">
+            <a href="{{ url('/logout')}}" class="nav-link">
+              <i class="mdi mdi-account-off"></i>Cerrar Sesión</a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      @endif
       <!-- partial -->
         @yield('content')
       <!-- main-panel ends -->
