@@ -1,5 +1,6 @@
 @extends('layouts.default')
 @section('content')
+
 @if(Auth::user()->idTipoUsuario == 1)
 <br>
 <br>
@@ -57,7 +58,7 @@
             @endforeach
         </tbody>
     </table>
-    @endif
+@endif
 
 @if(Auth::user()->idTipoUsuario == 3)
 <br>

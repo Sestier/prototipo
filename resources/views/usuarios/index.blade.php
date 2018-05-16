@@ -1,6 +1,6 @@
 @extends('layouts.default')
 @section('content')
-@if(Auth::user()->idTipoUsuario == 3)
+@if(Auth::user()->idTipoUsuario == 1)
 <br>
 <br>
 <br>
