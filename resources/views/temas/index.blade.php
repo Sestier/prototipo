@@ -20,9 +20,11 @@
             <p class="text-danger" >No se ha podido borrar el tema</p>
         @endif
     @endif
+    @if(Auth::user()->idTipoUsuario == 1)
     <a href="{{route('temas.create')}}">
         <button class="btn btn-primary" >Agregar tema</button>
     </a>
+    @endif
     <table class="table table-striped">
         <thead class="thead thead-light">
             <tr>
@@ -36,11 +38,20 @@
                 <tr>
                     <td>{{$tema->nombre}}</td>
                     <td>{{$tema->descripcion}}</td>
+                    @if(Auth::user()->idTipoUsuario == 1)
                     <td>
                         <a href="{{route('temas.edit', $tema->id)}}">
                             <button class="btn btn-primary" >Editar</button>
                         <a>
                      </td>
+                     @endif
+                     @if(Auth::user()->idTipoUsuario == 3)
+                     <td>
+                        <a href="{{route('temas.edit', $tema->id)}}">
+                            <button class="btn btn-primary" >Ver Subtemas</button>
+                        <a>
+                     </td>
+                     @endif
                 </tr>
             @endforeach
         </tbody>
