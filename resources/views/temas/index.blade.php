@@ -85,7 +85,7 @@
     </div>
     <button class="collapsible">Semestral</button>
     <div class="content">
-        <p><a href="#">Repaso semestral</a></p>
+        <p><a href="{{route('usuarios.index')}}">Repaso semestral</a></p>
     </div>
 
 </div>

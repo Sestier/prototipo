@@ -1,5 +1,6 @@
 @extends('layouts.default')
 @section('content')
+@if(Auth::user()->idTipoUsuario == 3)
 <br>
 <br>
 <br>
@@ -29,4 +30,20 @@
         @endforeach
     </tbody>
 </table>
+@endif
+
+@if(Auth::user()->idTipoUsuario == 3)
+<br>
+<br>
+<br>
+<br>
+<h1>Repaso para el semestral</h1>
+<p>Este es un repaso para el semestral.</p>
+
+<iframe width="420" height="315"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+<br>
+<a href="../images/semestral.rar" class="btn btn-success">Download</a>
+@endif
 @endsection
