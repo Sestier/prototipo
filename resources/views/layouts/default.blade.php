@@ -65,7 +65,6 @@
     <div class="container-fluid page-body-wrapper">
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        @endif @if(Auth::user()->idTipoUsuario == 3 )
         <ul class="nav">
           <div class="navbar-menu-wrapper d-flex align-items-center">
             <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
@@ -89,7 +88,6 @@
             </button>
           </div>
         </ul>
-        @endif
       </nav>
       <!-- partial -->
       <div class="main-panel">
