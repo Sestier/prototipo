@@ -66,26 +66,26 @@
 <br>
 <h1>Matemáticas</h1>
 <div class="col-md-12">
-    <h2>Collapsible Set:</h2>
     <button class="collapsible">Parcial 1</button>
     <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h3>Temas</h3>
+        <button class="collapsible">Sistema de ecuaciones lineales: Solución de sistemas de ecuaciones lineales 2x2</button>
+        <div class="content">
+        <h3>Subtemas</h3>
+        <p><a>Método de reducción</a><p>
+    </div>
     </div>
     <button class="collapsible">Parcial 2</button>
     <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Sin temas por el momento.</p>
     </div>
     <button class="collapsible">Parcial 3</button>
     <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Sin temas por el momento.</p>
     </div>
     <button class="collapsible">Semestral</button>
     <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p></p>
     </div>
 
 </div>
