@@ -89,6 +89,7 @@
           </div>
         </ul>
       </nav>
+      @endif
       <!-- partial -->
       <div class="main-panel">
         @yield('content')
