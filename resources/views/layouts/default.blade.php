@@ -63,6 +63,7 @@
     </nav>
     <div class="main-panel">
     </div>
+    @endif
     @yield('content')
     <!-- page-body-wrapper ends -->
   </div>
