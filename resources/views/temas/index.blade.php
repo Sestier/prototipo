@@ -1,6 +1,6 @@
-@if(Auth::user()->idTipoUsuario == 1)
 @extends('layouts.default')
 @section('content')
+@if(Auth::user()->idTipoUsuario == 1)
 <br>
 <br>
 <br>
@@ -57,11 +57,9 @@
             @endforeach
         </tbody>
     </table>
-    @endsection
-@endif
+    @endif
 
-@if(Auth::user()->idTipoUsuario == 3)
-@extends('layouts.default') @section('content')
+    @if(Auth::user()->idTipoUsuario == 3)
 <br>
 <br>
 <br>
@@ -91,7 +89,8 @@
     </div>
 
 </div>
-@endsection @section('customStyles')
+
+@section('customStyles')
 <style>
     .collapsible {
         background-color: #777;
@@ -135,3 +134,6 @@
     }
 </script>@endsection
 @endif
+    @endsection
+
+
