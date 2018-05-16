@@ -1,5 +1,9 @@
 @extends('layouts.default')
 @section('content')
+<br>
+<br>
+<br>
+<br>
 <h1>Crear usuario</h1>
 <form id="frmCrearUsuario" action="{{route('usuarios.store')}}" method="POST">
     {{ csrf_field() }}

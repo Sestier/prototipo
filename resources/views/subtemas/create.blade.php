@@ -1,5 +1,9 @@
 @extends('layouts.default')
 @section('content')
+<br>
+<br>
+<br>
+<br>
     <h1>Nuevo subtema</h1>
     <form method="POST" action="{{route('temas.subtemas.store', $idTema)}}">
         {{ csrf_field() }}

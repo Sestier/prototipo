@@ -1,5 +1,9 @@
 @extends('layouts.default')
 @section('content')
+<br>
+<br>
+<br>
+<br>
 <h1>Usuarios</h1>
 <a href="{{route('usuarios.create')}}">
     <button class="btn btn-primary ">Crear usuario</button>

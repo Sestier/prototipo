@@ -1,5 +1,9 @@
 @extends('layouts.default')
 @section('content')
+<br>
+<br>
+<br>
+<br>
     <h1>Nuevo tema</h1>
     <form method="POST" action="{{ route('temas.store') }}">
         {{ csrf_field() }}

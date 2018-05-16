@@ -1,4 +1,8 @@
 @extends('layouts.default') @section('content')
+<br>
+<br>
+<br>
+<br>
 <h1>Editar tema</h1>
 <a href="{{route('temas.index')}}">Volver a temas</a>
 @if($exito)

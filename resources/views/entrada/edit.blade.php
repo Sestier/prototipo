@@ -1,4 +1,8 @@
 @extends('layouts.default') @section('content')
+<br>
+<br>
+<br>
+<br>
 <h1>Editar informacion General</h1>
 <a href="{{route('index')}}">Volver a informacion general</a>
 

@@ -1,5 +1,9 @@
 @extends('layouts.default')
 @section('content')
+<br>
+<br>
+<br>
+<br>
     <h1>Temas</h1>
     @if($exito != null)
         @if($exito == 1)

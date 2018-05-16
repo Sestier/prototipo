@@ -1,5 +1,9 @@
 @extends('layouts.default')
 @section('content')
+<br>
+<br>
+<br>
+<br>
     <h1>Editar subtema</h1>
     <a href="{{route('temas.index')}}">Volver a subtemas</a>
     @if($exito)
