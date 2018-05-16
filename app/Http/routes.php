@@ -15,6 +15,8 @@ Route::auth();
 
 Route::get('/', ["uses" => 'HomeController@index', 'as' => 'index']);
 
+Route::get('/', ["uses" => 'HomeController@matematicas', 'as' => 'matematicas']);
+
 Route::resource('usuarios', 'UsuarioController');
 Route::resource('temas', 'TemaController');
 Route::resource('subtemas', 'SubTemaController');
