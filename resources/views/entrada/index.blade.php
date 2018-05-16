@@ -11,7 +11,7 @@
     </p>
 
     <img src="../images/formulario.png" alt="Placeholder">
-
+    <br>
     <a href="../images/formulario.rar" class="btn btn-success">Download</a>
 
     @if(Auth::user()->idTipoUsuario == 1)

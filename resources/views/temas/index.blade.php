@@ -85,7 +85,7 @@
     </div>
     <button class="collapsible">Semestral</button>
     <div class="content">
-        <p><a href="{{route('temas.edit', $tema->id)}}">Repaso semestral</a></p>
+        <p><a href="#">Repaso semestral</a></p>
     </div>
 
 </div>
